@@ -1,0 +1,4 @@
+x=int(input())
+y=int(input())
+m=int(input())
+print(pow(x,y),pow(x,y,m),sep="\n")
