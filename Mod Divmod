@@ -1,0 +1,4 @@
+x=int(input())
+y=int(input())
+divm=divmod(x,y)
+print(divm[0],divm[1],divm,sep="\n")
