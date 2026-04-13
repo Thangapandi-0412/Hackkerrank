@@ -1,0 +1,6 @@
+if __name__ == '__main__':
+    n = int(input())
+    v_value = 0
+while v_value < n:
+    print(v_value * v_value)
+    v_value = v_value + 1
