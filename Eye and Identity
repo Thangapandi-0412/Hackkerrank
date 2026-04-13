@@ -1,0 +1,6 @@
+import numpy as np
+
+np.set_printoptions(legacy='1.13')
+n = input() 
+l1 = list(map(int,n.split(' '))) 
+print(np.eye(l1[0],l1[1]))
