@@ -1,0 +1,11 @@
+if __name__ == '__main__':
+    s = input()
+    res = [False]*5
+    for i in s:
+        res[0] = res[0] or i.isalnum() 
+        res[1] = res[1] or i.isalpha()  
+        res[2] = res[2] or i.isdigit()  
+        res[3] = res[3] or i.islower()  
+        res[4] = res[4] or i.isupper()  
+    for r in res:
+        print(r)
