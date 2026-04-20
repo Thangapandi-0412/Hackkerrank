@@ -1,0 +1,11 @@
+n=int(input())
+students=[]
+for i in range(n):
+    a=input()
+    b=float(input())
+    students.append((a,b))
+sorted_values=sorted(set(b for _,b in students))
+second_value=sorted_values[1]
+name=sorted([a for a,b in students if second_value==b ])
+for result in name:
+    print(result)
