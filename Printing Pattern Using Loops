@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+
+    int n;
+    scanf("%d", &n);
+      // Complete the code to print the pattern.
+    int width = 2*n-1;
+    int min, cur;
+    for (int h = 0; h < width; h++){
+        min = (n - h > 2-n + h) ? n - h : 2-n + h;
+        for (int w = 0; w < width; w++){
+            cur = (n - w > 2-n + w) ? n - w : 2-n + w;
+            printf("%d " , (cur > min) ? cur : min);
+        }
+        printf("\n");
+        
+    }
+    return 0;
+}
