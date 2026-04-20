@@ -1,0 +1,5 @@
+import math
+AB = int(input())
+BC = int(input())
+angle = math.atan(AB/BC)
+print(f"{round(math.degrees(angle))}\u00b0")
