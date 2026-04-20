@@ -1,0 +1,6 @@
+for _ in range(int(input())):
+    a = int(input())
+    setA = set(input().split())
+    b = int(input())
+    setB = set(input().split())
+    print(True if setB.union(setA)==setB else False)
