@@ -1,0 +1,10 @@
+if __name__ == '__main__':
+    N = int(input())
+output = []
+for _ in range(N):
+    cmd, *vals = input().split()
+    if cmd == 'print':
+        print(output)
+    else:
+        getattr(list, cmd)(output, *map(int, vals))
+
