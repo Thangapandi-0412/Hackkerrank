@@ -1,0 +1,22 @@
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main() {
+   int a;
+    long b;
+    char c;
+    float d;
+    double e;
+        
+        // Take multiple input
+    scanf("%d %ld %c %f %lf", &a, &b, &c, &d, &e);
+    
+        // print output
+        // to make it more readable separate the a, b, c
+    printf("%d\n%ld\n%c\n", a, b, c);
+    printf("%.3f\n", d);
+    printf("%.9lf\n", e);
+    
+    return 0;
+}
